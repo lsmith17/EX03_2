@@ -11,11 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="Quadratic.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Quadratic.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C9C1BE7C-080A-4F28-9952-CDA37AAE8BC3}</ProjectGuid>
