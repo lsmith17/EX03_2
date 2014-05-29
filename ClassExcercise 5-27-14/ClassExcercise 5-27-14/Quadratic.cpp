@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cmath>
+using namespace std;
+
 class QuadraticEquation
 {
 private:
@@ -9,29 +11,30 @@ private:
 public:
 	QuadraticEquation(double a, double b, double c){
 	}
-	float getA(){
+	double getA(){
 		return a;
 	}
-	float getB(){
+	double getB(){
 		return b;
 	}
-	float getC(){
+	double getC(){
 		return c;
 	}
-	float getDiscriminant() {
+	double getDiscriminant() {
 		return (b*b) - (4 * a*c);
 	}
-	float getRoot1() {
-		if (getDiscriminant() < 0)
+	double getRoot1() {
+		if (getDiscriminant() < 0){
 			return 0;
+		}
 		else{
 		return (-b + sqrt(getDiscriminant())) / (2 * a);
 	}
 	}
-	float getRoot2() {
-		if (getDiscriminant() < 0)
+	double getRoot2() {
+		if (getDiscriminant() < 0){
 			return 0;
-
+		}
 		else{
 			return (-b - sqrt(getDiscriminant())) / (2 * a);
 		}
@@ -42,7 +45,7 @@ int main(){
 	
 	double a, b, c, discriminant;
 	cout << "Enter the three coefficients: a, b, c " << endl;
-	cin << a << b << c;
+	cin >> a >> b >> c;
 
 	QuadraticEquation Q(a, b, c);
 	discriminant = Q.getDiscriminant;
